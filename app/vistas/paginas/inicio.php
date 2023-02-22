@@ -7,7 +7,7 @@ require RUTA_APP . '/vistas/inc/header.php';
         <div class="container mt-4">
             <div class="row border">
                 <div class="col-3 border">
-                    <img src="img/logo.png" class="img-fluid" alt="Responsive image font-weight-bold">
+                    <img src="<?=RUTA_URL?>/img/logo.png" class="img-fluid" alt="Responsive image font-weight-bold">
                 </div>
                 <div class="col-6 border">
                     <div class="row">

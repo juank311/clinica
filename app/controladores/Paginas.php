@@ -1,10 +1,10 @@
 <?php
 
 class Paginas extends Controlador
-{
+{   private $paginasModelo;
     public function __construct()
     {
-        //echo "hola soy el controlador paginas:";
+        $this->paginasModelo = $this->modelo('Articulo');
     }
 
     public function index()
