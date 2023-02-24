@@ -44,6 +44,7 @@
   </div>
 </footer>
     <Script> type="text/javascript" src="<?= RUTA_URL?>/js/main.js" </Script>
+    <script src="https://kit.fontawesome.com/05e15f14b6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
