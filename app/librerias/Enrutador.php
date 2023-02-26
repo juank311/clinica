@@ -6,7 +6,7 @@
 
 class Enrutador 
 {   
-    protected $controladorDefault = 'welcome';
+    protected $controladorDefault = 'welcomes';
     protected $metodoDefault = 'index';
     protected $parametroDefault = [];
     public $controlador;

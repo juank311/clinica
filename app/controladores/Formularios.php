@@ -1,8 +1,8 @@
 <?php
 
 class Formularios extends Controlador 
-    {   
-        public $paginasModelo;
+{   
+    public $paginasModelo;
     public function __construct()
     {
         $this->paginasModelo = $this->modelo('Formulario'); 
@@ -19,7 +19,7 @@ class Formularios extends Controlador
         {
             $datos = 
             [
-                'pregunta_1' => trim($_POST['pregunta_1']),
+                'pregunta_1' =>trim($_POST['pregunta_1']),
                 'pregunta_2' => trim($_POST['pregunta_2']),
                 'pregunta_3' => trim($_POST['pregunta_3']),
                 'pregunta_4' => trim($_POST['pregunta_4']),
@@ -77,8 +77,77 @@ class Formularios extends Controlador
                 'piso' => trim($_POST['piso']),
                 'usuario' => trim($_POST['usuario'])
             ];
-        }
-            
-        $this->vista('formularios/formulario_01', $datos);
+
+            if ($this->paginasModelo->agregarFormulario($datos)) 
+            {
+                    
+                header('Location: '.RUTA_URL.'/formularios');
+            }else 
+            {
+                die('Algo está salio mal');
+            }
+        }else{ 
+            $datos = [
+                'pregunta_1' => '',
+                'pregunta_2' => '',
+                'pregunta_3' => '',
+                'pregunta_4' => '',
+                'pregunta_5' => '',
+                'pregunta_6' => '',
+                'pregunta_7' => '',
+                'pregunta_8' => '',
+                'pregunta_9' => '',
+                'pregunta_10' => '',
+                'pregunta_11' => '',
+                'pregunta_12' => '',
+                'pregunta_13' => '',
+                'pregunta_14' => '',
+                'pregunta_15' => '',
+                'pregunta_16' => '',
+                'pregunta_17' => '',
+                'pregunta_18' => '',
+                'pregunta_19' => '',
+                'pregunta_20' => '',
+                'pregunta_21' => '',
+                'pregunta_22' => '',
+                'pregunta_23' => '',
+                'pregunta_24' => '',
+                'pregunta_25' => '',
+                'pregunta_26' => '',
+                'pregunta_27' => '',
+                'obs_p1' => '',
+                'obs_p2' => '',
+                'obs_p3' => '',
+                'obs_p4' => '',
+                'obs_p5' => '',
+                'obs_p6' => '',
+                'obs_p7' => '',
+                'obs_p8' => '',
+                'obs_p9' => '',
+                'obs_p10' => '',
+                'obs_p11' => '',
+                'obs_p12' => '',
+                'obs_p13' => '',
+                'obs_p14' => '',
+                'obs_p15' => '',
+                'obs_p16' => '',
+                'obs_p17' => '',
+                'obs_p18' => '',
+                'obs_p19' => '',
+                'obs_p20' => '',
+                'obs_p21' => '',
+                'obs_p22' => '',
+                'obs_p23' => '',
+                'obs_p24' => '',
+                'obs_p25' => '',
+                'obs_p26' => '',
+                'obs_p27' => '',
+                'consecutivo' => '',
+                'piso' => '',
+                'usuario' => ''
+            ];
+
+            $this->vista('formularios/formulario_01', $datos);
+        };
     }
 }

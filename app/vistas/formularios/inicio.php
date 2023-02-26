@@ -7,11 +7,11 @@ require RUTA_APP . '/vistas/inc/header.php';
     <div class="container mt-5">
         <div class="row">
             <div class="col-2">
-                <a href="formularios/formulario_01">
+                <a href="<?= RUTA_URL?>/formularios/formulario_01">
                     <div class="card" style="width: 12rem;">
                         <img src="<?= RUTA_URL?>/img/formulario_01.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Formulario_01</p>
+                            <p class="card-text">1. REVISIÓN DIARIA DE CARRO DE PARO</p>
                         </div>
                     </div>
                 </a>
