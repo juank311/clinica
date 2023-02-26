@@ -57,19 +57,19 @@ require RUTA_APP . '/vistas/inc/header.php';
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
-                        <option value="1">4</option>
-                        <option value="2">5</option>
-                        <option value="3">6</option>
-                        <option value="1">7</option>
-                        <option value="2">8</option>
-                        <option value="3">9</option>
-                        <option value="3">10</option>
-                        <option value="3">11</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
                     </select>
                 </div>
                 <div class="col-4">
                     <label for="usuario"><b>Usuario Actual:</b></label>
-                    <input type="text" class="form-control" name="usuario" id="usuario" value="<?= $_SESSION['dataUser']->email;?>">
+                    <input type="text" class="form-control" name="usuario" id="usuario" value="<?= $_SESSION['dataUser']->name .' '.$_SESSION['dataUser']->last_name ;?>" readonly>
                 </div>
             </div>
     </div>

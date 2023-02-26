@@ -25,11 +25,11 @@
                     <?php endif ?>
                     <form action="<?= RUTA_URL ?>/welcome/login" method="POST">
                         <div class="form-group mt-5 col-4 mx-auto">
-                            <label for="username" style="color: white;">Usuario:<sup style="color: red;">*</sup></label>
+                            <label for="username" style="color: white;">Usuario:<sup style="color: red;"> *</sup></label>
                             <input type="text" class="form-control" id="username" name="email" >
                         </div>
                         <div class="form-group mt-5 col-4 mx-auto">
-                            <label for="password" style="color: white;">Contraseña:<sup style="color: red;">*</sup></label>
+                            <label for="password" style="color: white;">Contraseña:<sup style="color: red;"> *</sup></label>
                             <input type="password" class="form-control" id="password" name="password">
                         </div>
                         <div class="form-group mb-5 mt-5">
