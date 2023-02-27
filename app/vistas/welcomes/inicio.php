@@ -19,7 +19,7 @@
                     </div>
                     <div class="row mt-4 mb-4">
                         <div class="col-12 d-flex align-items-center justify-content-center">
-                        <a href="<?= RUTA_URL?>/welcome/Login" class="btn btn-primary btn-lg">Ingresar</a>
+                        <a href="<?= RUTA_URL?>/welcomes/login" class="btn btn-primary btn-lg">Ingresar</a>
                         </div>
                     </div>
 

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-2">
-                    <a href="<?= RUTA_URL ?>">
+                    <a href="<?php if(isset($_SESSION['activo']) && $_SESSION['activo'] == true){ echo RUTA_URL.'/formularios';}else { echo RUTA_URL;}?>">
                         <img src="<?= RUTA_URL ?>/img/logo.png" class="img-fluid" alt="Responsive image font-weight-bold">
                     </a>
                 </div>

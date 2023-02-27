@@ -36,7 +36,8 @@ require RUTA_APP . '/vistas/inc/header.php';
                                 <td><?= $row->date_creation; ?></td>
                                 <td>
                                 <a href="<?= RUTA_URL?>/formularios/mostrar/<?=$row->id?>" class="btn btn-warning"><i class="fa-solid fa-eye"></i> Ver</a>
-                                <a href="<?= RUTA_URL?>/welcome/Login" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Borrar</a>
+
+                                <a href="<?= RUTA_URL?>/formularios/borrar/<?=$row->id?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Borrar</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

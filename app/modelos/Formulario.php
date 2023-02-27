@@ -182,6 +182,20 @@ class Formulario
         };
 
     }
+
+    public function borrarFormulario($datos)
+    {
+        $this->db->query("DELETE FROM formulario_01 WHERE id = :id");
+        $this->db->bind(':id', $datos['id']);
+
+        #ejecutar la consulta 
+        if ($this->db->execute()) {
+            return true;
+        }else {
+            return false;
+        };
+
+    }
     
 }
 

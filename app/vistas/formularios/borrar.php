@@ -47,7 +47,7 @@ require RUTA_APP . '/vistas/inc/header.php';
         </div>
     </div>
     <div class="container mt-3">
-        <form action="<?= RUTA_URL ?>/formularios/mostrar/<?= $datos['data']->id ?>" method="POST">
+        <form action="" method="POST">
             <div class="row">
                 <div class="col-3">
                     <label for="selec"><b>Piso No:</b></label>
@@ -60,9 +60,9 @@ require RUTA_APP . '/vistas/inc/header.php';
             </div>
     </div>
     <div class="container">
-    <div class="col-6 mt-2 mb-2">
-        <a href="<?= RUTA_URL ?>/formularios/lista01" class="btn btn-dark"><i class="fas fa-undo-alt"></i> Regresar</a>
-    </div>
+        <div class="col-6 mt-2 mb-2">
+            <a href="<?= RUTA_URL ?>/formularios/lista01" class="btn btn-dark"><i class="fas fa-undo-alt"></i> Regresar</a>
+        </div>
         <div class="row">
             <div class="col-12 border  text-center align-center bg-primary py-1">
                 <h6><b>REGISTRO DE CONTROL DE EQUIPOS DE APOYO</b></h6>
@@ -90,7 +90,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_1" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_1 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -98,7 +98,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_1" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_1 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -106,13 +106,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_1" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_1 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p1" value="<?= $datos['data']->obs_p1 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p1" disabled value="<?= $datos['data']->obs_p1  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -126,7 +126,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_2" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_2 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -134,7 +134,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_2" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_2 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -142,13 +142,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_2" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_2 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p2" value="<?= $datos['data']->obs_p2 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p2" disabled value="<?= $datos['data']->obs_p2  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -163,7 +163,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_3" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_3 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -171,7 +171,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_3" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_3 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -179,13 +179,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_3" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_3 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p3" value="<?= $datos['data']->obs_p3 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p3" disabled value="<?= $datos['data']->obs_p3  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -200,7 +200,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_4" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_4 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -208,7 +208,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_4" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_4 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -216,13 +216,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_4" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_4 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p4" value="<?= $datos['data']->obs_p4 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p4" disabled value="<?= $datos['data']->obs_p4  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -237,7 +237,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_5" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_5 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -245,7 +245,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_5" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_5 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -253,13 +253,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_5" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_5 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p5" value="<?= $datos['data']->obs_p5 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p5" disabled value="<?= $datos['data']->obs_p5  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -274,7 +274,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_6" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_6 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -282,7 +282,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_6" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_6 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -290,13 +290,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_6" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_6 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p6" value="<?= $datos['data']->obs_p6 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p6" disabled value="<?= $datos['data']->obs_p6  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -311,7 +311,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_7" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_7 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -319,7 +319,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_7" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_7 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -327,13 +327,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_7" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_7 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p7" value="<?= $datos['data']->obs_p7 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p7" disabled value="<?= $datos['data']->obs_p7  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -348,7 +348,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_8" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_8 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -356,7 +356,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_8" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_8 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -364,13 +364,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_8" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_8 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p8" value="<?= $datos['data']->obs_p8 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p8" disabled value="<?= $datos['data']->obs_p8  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -385,7 +385,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_9" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_9 == "si") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -393,7 +393,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_9" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_9 == "no") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -401,13 +401,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_9" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_9 == "na") {
                                                                                                                                             echo "checked";
-                                                                                                                                        } ?> required>
+                                                                                                                                        } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p9" value="<?= $datos['data']->obs_p9 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p9" disabled value="<?= $datos['data']->obs_p9  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -419,7 +419,7 @@ require RUTA_APP . '/vistas/inc/header.php';
 
                                     <td class="col-1 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="consecutivo" value="<?= $datos['data']->consecutivo ?>">
+                                            <input type="text" class="form-control" id="" name="consecutivo" value="<?= $datos['data']->consecutivo ?>" disabled>
                                         </div>
                                     </td>
                                 </tr>
@@ -459,7 +459,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_10" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_10 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -467,7 +467,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_10" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_10 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -475,13 +475,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_10" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_10 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p10" value="<?= $datos['data']->obs_p10 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p10" disabled value="<?= $datos['data']->obs_p10  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -495,7 +495,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_11" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_11 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -503,7 +503,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_11" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_11 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -511,13 +511,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_11" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_11 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p11" value="<?= $datos['data']->obs_p11 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p11" disabled value="<?= $datos['data']->obs_p11  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -532,7 +532,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_12" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_12 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -540,7 +540,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_12" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_12 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -548,13 +548,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_12" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_12 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p12" value="<?= $datos['data']->obs_p12 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p12" disabled value="<?= $datos['data']->obs_p12  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -569,7 +569,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_13" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_13 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -577,7 +577,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_13" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_13 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -585,13 +585,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_13" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_13 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p13" value="<?= $datos['data']->obs_p13 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p13" disabled value="<?= $datos['data']->obs_p13  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -606,7 +606,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_14" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_14 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -614,7 +614,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_14" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_14 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -622,13 +622,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_14" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_14 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p14" value="<?= $datos['data']->obs_p14 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p14" disabled value="<?= $datos['data']->obs_p14  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -643,7 +643,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_15" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_15 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -651,7 +651,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_15" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_15 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -659,13 +659,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_15" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_15 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p15" value="<?= $datos['data']->obs_p15 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p15" disabled value="<?= $datos['data']->obs_p15  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -680,7 +680,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_16" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_16 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -688,7 +688,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_16" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_16 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -696,13 +696,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_16" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_16 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p16" value="<?= $datos['data']->obs_p16 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p16" disabled value="<?= $datos['data']->obs_p16  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -717,7 +717,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_17" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_17 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -725,7 +725,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_17" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_17 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -733,13 +733,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_17" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_17 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p17" value="<?= $datos['data']->obs_p17 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p17" disabled value="<?= $datos['data']->obs_p17  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -754,7 +754,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_18" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_18 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -762,7 +762,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_18" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_18 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -770,13 +770,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_18" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_18 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p18" value="<?= $datos['data']->obs_p18 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p18" disabled value="<?= $datos['data']->obs_p18  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -791,7 +791,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_19" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_19 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -799,7 +799,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_19" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_19 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -807,13 +807,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_19" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_19 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p19" value="<?= $datos['data']->obs_p19 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p19" disabled value="<?= $datos['data']->obs_p19  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -827,7 +827,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_20" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_20 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -835,7 +835,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_20" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_20 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -843,13 +843,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_20" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_20 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p20" value="<?= $datos['data']->obs_p20 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p20" disabled value="<?= $datos['data']->obs_p20  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -864,7 +864,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_21" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_21 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -872,7 +872,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_21" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_21 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -880,13 +880,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_21" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_21 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p21" value="<?= $datos['data']->obs_p21 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p21" disabled value="<?= $datos['data']->obs_p21  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -901,7 +901,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_22" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_22 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -909,7 +909,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_22" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_22 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -917,13 +917,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_22" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_22 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p22" value="<?= $datos['data']->obs_p22 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p22" disabled value="<?= $datos['data']->obs_p22  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -938,7 +938,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_23" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_23 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -946,7 +946,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_23" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_23 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -954,13 +954,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_23" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_23 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p23" value="<?= $datos['data']->obs_p23 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p23" disabled value="<?= $datos['data']->obs_p23  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -975,7 +975,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_24" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_24 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -983,7 +983,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_24" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_24 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -991,13 +991,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_24" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_24 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p24" value="<?= $datos['data']->obs_p24 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p24" disabled value="<?= $datos['data']->obs_p24  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -1012,7 +1012,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_25" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_25 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -1020,7 +1020,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_25" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_25 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -1028,13 +1028,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_25" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_25 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p25" value="<?= $datos['data']->obs_p25 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p25" disabled value="<?= $datos['data']->obs_p25  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -1049,7 +1049,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_26" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_26 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -1057,7 +1057,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_26" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_26 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -1065,13 +1065,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_26" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_26 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p26" value="<?= $datos['data']->obs_p26 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p26" disabled value="<?= $datos['data']->obs_p26  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -1086,7 +1086,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_27" id="inlineRadio1" value="si" <?php if ($datos['data']->pregunta_27 == "si") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio1"></label>
                                         </div>
                                     </td>
@@ -1094,7 +1094,7 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline align-center">
                                             <input class="form-check-input" type="radio" name="pregunta_27" id="inlineRadio2" value="no" <?php if ($datos['data']->pregunta_27 == "no") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
@@ -1102,13 +1102,13 @@ require RUTA_APP . '/vistas/inc/header.php';
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="pregunta_27" id="inlineRadio2" value="na" <?php if ($datos['data']->pregunta_27 == "na") {
                                                                                                                                                 echo "checked";
-                                                                                                                                            } ?> required>
+                                                                                                                                            } ?> required disabled>
                                             <label class="form-check-label" for="inlineRadio2"></label>
                                         </div>
                                     </td>
                                     <td class="col-3 border align-cente text-center">
                                         <div>
-                                            <input type="text" class="form-control" id="" name="obs_p27" value="<?= $datos['data']->obs_p27 ?>">
+                                            <input type="text" class="form-control" id="" name="obs_p27" disabled value="<?= $datos['data']->obs_p27  ?>">
                                         </div>
                                     </td>
                                 </tr>
@@ -1123,26 +1123,28 @@ require RUTA_APP . '/vistas/inc/header.php';
     </div>
 
     <div class="d-grid gap-2 col-2 mx-auto mt-4">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#editarModal"> <i class="fas fa-edit"></i>  Modificar</button>
-        <!-- Modal Editar-->
-        <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="editarModalLabel" aria-hidden="true">
+        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#borrarModal">
+            <i class="fa-solid fa-trash"></i> Eliminar
+        </button>
+        <!-- Modal Borrar-->
+        <div class="modal fade" id="borrarModal" tabindex="-1" aria-labelledby="borrarModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="text-dark" class="modal-title" id="editarModalLabel">Advertencia</h5>
+                        <h5 class="text-dark">Advertencia</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ¿Seguro que desea modificar el formulario?
+                        ¿Seguro que desea Eliminar el formulario?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button class="btn btn-primary btn" value="actualizar_formulario" type="submit"><i class="fas fa-edit"></i><b>  Modificar</b></button>
+                        <button class="btn btn-danger btn" value="borrar_formulario" type="submit"><i class="fa-solid fa-trash"></i> <b>  Eliminar</b></button>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     </form>
 </main>
