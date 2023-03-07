@@ -6,7 +6,7 @@
 
 class Enrutador 
 {   
-    protected $controladorDefault = 'welcome';
+    protected $controladorDefault = 'Welcomes';
     protected $metodoDefault = 'index';
     protected $parametroDefault = [];
     public $controlador;
@@ -20,7 +20,7 @@ class Enrutador
 
        if (is_array($url)) 
        {
-            if (file_exists('../app/controladores/'.ucwords($url[0]).'.php')) 
+            if (file_exists(RUTA_APP.'/controladores/'.ucwords($url[0]).'.php')) 
             #verifica si existe el controlador en la carpeta controladores
             {
                 $this->controladorDefault = ucwords($url[0]);
@@ -31,7 +31,7 @@ class Enrutador
             }
        }
        
-       require_once('../app/controladores/'.$this->controladorDefault).'.php';
+       require_once(RUTA_APP.'/controladores/'.$this->controladorDefault).'.php';
        #requiere el controlador digitado en la url
        $class = $this->controladorDefault;
        $this->controladorDefault = new $class;

@@ -1,9 +1,10 @@
-<?php 
+<?php
 
-class Formulario
+class Registro
 {
     private $db;
-    public function __construct() {
+    public function __construct()
+    {
         $this->db = new Base;
     }
 
@@ -12,12 +13,7 @@ class Formulario
         $this->db->query("SELECT * FROM usuarios");
         return $this->db->registros();
     }
+
 }
 
 
-
-
-
-
-
-?>
